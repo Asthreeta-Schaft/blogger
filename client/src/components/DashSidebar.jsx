@@ -4,11 +4,12 @@ import { Sidebar } from 'flowbite-react';
 import { HiArrowSmRight, HiUser } from 'react-icons/hi';
 
 export default function DashSidebar() {
-    const location = useLocation()
-    const [tab, setTab] = useState('')
+    const location = useLocation();
+    const [tab, setTab] = useState('');
+
     useEffect(() => {
-      const urlParams = new URLSearchParams(location.search)
-      const tabFromUrl = urlParams.get('tab')
+      const urlParams = new URLSearchParams(location.search);
+      const tabFromUrl = urlParams.get('tab');
       if (tabFromUrl){
         setTab(tabFromUrl);
       }
