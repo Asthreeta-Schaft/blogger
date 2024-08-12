@@ -13,7 +13,7 @@ mongoose.connect(
 )
 .then(() => {
     console.log('Database is connected');
-}).catch(err => {
+}).catch((err) => {
     console.log(err);
 });
 
@@ -35,6 +35,6 @@ app.use((err, req, res, next) => {
     res.status(statusCode).json({
         success: false,
         statusCode,
-        message
+        message,
     });
 });
