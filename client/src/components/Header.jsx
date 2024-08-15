@@ -54,13 +54,13 @@ export default function Header() {
      <Navbar className="border-b-2">
 
         <Link to="/" className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white">
-            <span className="px-2 py-1 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 rounded-lg text-white">
-                MERN
+            <span className="px-2 py-1 bg-gradient-to-r from-green-700 via-green-500 to-blue-500 rounded-lg text-white">
+                ARTICULUS
             </span>
                 Blog
         </Link>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
             <TextInput
                 type="text"
                 placeholder="Search..."
@@ -124,7 +124,7 @@ export default function Header() {
 
             <Navbar.Link active={path === "/projects"} as={'div'}>
                 <Link to="/projects">
-                PROJECTS</Link>
+                BLOGS</Link>
             </Navbar.Link>
         </Navbar.Collapse>
      </Navbar>
