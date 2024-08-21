@@ -35,12 +35,8 @@ export default function FooterCom() {
                     <Footer.Title title='Follow Us' />
                     <Footer.LinkGroup col>
 
-                        <Footer.Link href="" target="_blank" rel="noopener noreferrer">
+                        <Footer.Link href="https://www.instagram.com/god_le_infernal/" target="_blank" rel="noopener noreferrer">
                             Instagram
-                        </Footer.Link>
-
-                        <Footer.Link href="" target="_blank" rel="noopener noreferrer">
-                            Discord
                         </Footer.Link>
 
                     </Footer.LinkGroup>
@@ -67,11 +63,14 @@ export default function FooterCom() {
             </div>
             <br></br>
 
-            <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center cursor-pointer">
+        {/* <div className="flex gap-6 sm:mt-0 mt-4       sm:justify-center cursor-pointer">
                 <Footer.Icon href="" icon={BsFacebook}/>
                 <Footer.Icon href="" icon={BsInstagram}/>
                 <Footer.Icon href="" icon={BsLinkedin}/>
-            </div>
+            </div> 
+        */}
+
+
         </div>
     </Footer>
   )

@@ -60,7 +60,7 @@ export default function Header() {
                 Blog
         </Link>
 
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit}>
             <TextInput
                 type="text"
                 placeholder="Search..."
@@ -71,7 +71,7 @@ export default function Header() {
             />
         </form>
 
-        <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+        <Button className="w-12 h-10 lg:hidden" onClick={handleSubmit} color="gray" pill>
             <AiOutlineSearch/>
         </Button>
 
