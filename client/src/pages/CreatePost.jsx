@@ -10,15 +10,18 @@ import { useNavigate } from 'react-router-dom';
 
 export default function CreatePost() {
   const [file, setFile] = useState(null);
+
   const [imageUploadProgress, setImageUploadProgress] = useState(null);
   const [imageUploadError, setImageUploadError] = useState(null);
+
+
   const [formData, setFormData] = useState({});
   const [publishError, setPublishError] = useState(null);  
 
   const navigate = useNavigate();
 
+  {/* For image of post */}
   const handleUploadImage = async ()=>{
-
     try {
       if(!file){
         setImageUploadError('Please select an image');
@@ -57,6 +60,8 @@ export default function CreatePost() {
     }
   };
 
+
+  {/* for submission of post data */}
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -99,9 +104,12 @@ export default function CreatePost() {
                 <option value="uncategorized">Choose your category</option>
                 <option value="general">Blogs - General</option>
                 <option value="highlighted">Blogs - Highlighted</option>
+                <option value="education">Books - Education</option>
 
             </Select>
         </div>
+
+        {/* Image Upload */}
 
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
             
@@ -127,10 +135,16 @@ export default function CreatePost() {
         {formData.image && (
           <img src={formData.image} alt='upload' className='h-72 w-full object-cover' required />
         )}
+        
+
+        
+        {/* text area */}
 
         <ReactQuill theme="snow" placeholder='Write something...' className='h-72 mb-12' required onChange={(value) => {
               setFormData({ ...formData, content: value });
             }}/> 
+
+
 
         <Button type='submit' gradientDuoTone='purpleToPink'>Publish</Button>
         {

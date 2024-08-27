@@ -133,6 +133,7 @@ export default function Search() {
               <option value="uncategorized">Choose your category</option>
               <option value="general">Blogs - General</option>
               <option value="highlighted">Blogs - Highlighted</option>
+              <option value="education">Books - Education</option>
               
             </Select>
           </div>
