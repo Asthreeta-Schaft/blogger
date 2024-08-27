@@ -97,8 +97,8 @@ export default function CreatePost() {
               setFormData({ ...formData, category: e.target.value });
             }}>
                 <option value="uncategorized">Choose your category</option>
-                <option value="general">General</option>
-                <option value="highlighted">Highlighted</option>
+                <option value="general">Blogs - General</option>
+                <option value="highlighted">Blogs - Highlighted</option>
 
             </Select>
         </div>

@@ -131,8 +131,8 @@ export default function Search() {
               id='category'
             >
               <option value="uncategorized">Choose your category</option>
-              <option value="general">General</option>
-              <option value="highlighted">Highlighted</option>
+              <option value="general">Blogs - General</option>
+              <option value="highlighted">Blogs - Highlighted</option>
               
             </Select>
           </div>
