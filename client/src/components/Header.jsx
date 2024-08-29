@@ -57,7 +57,7 @@ export default function Header() {
             <span className="px-2 py-1 bg-gradient-to-r from-green-700 via-green-500 to-blue-500 rounded-lg text-white">
                 ARTICULUS
             </span>
-                Blog
+                Centro
         </Link>
 
         <form onSubmit={handleSubmit}>
@@ -124,7 +124,7 @@ export default function Header() {
 
             <Navbar.Link active={path === "/projects"} as={'div'}>
                 <Link to="/projects">
-                BLOGS</Link>
+                BLOGS nd BOOKS</Link>
             </Navbar.Link>
         </Navbar.Collapse>
      </Navbar>

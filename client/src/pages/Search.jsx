@@ -131,9 +131,25 @@ export default function Search() {
               id='category'
             >
               <option value="uncategorized">Choose your category</option>
-              <option value="general">Blogs - General</option>
-              <option value="highlighted">Blogs - Highlighted</option>
-              <option value="education">Books - Education</option>
+                <option value="general">Blogs - General</option>
+                <option value="highlighted">Blogs - Highlighted</option>
+                
+                <option value="arts">Books - Arts</option>
+                <option value="comics">Books - Comics</option>
+                <option value="crime">Books - Crime Novel</option>
+                <option value="cs">Books - Computer Science</option>
+                <option value="darkromance">Books - Dark Romance</option>
+                <option value="education">Books - Education</option>
+                <option value="fairytail">Books - Fairy Tale</option>
+                <option value="friction">Books - Science Friction</option>
+                <option value="mythology">Books - Mythology</option>
+                <option value="psychology">Books - Psychology</option>
+                <option value="religion">Books - Religion</option>
+                <option value="romance">Books - Romance Novel</option>
+                <option value="stories">Books - Short Stories</option>
+                
+                <option value="others">Books - Others</option>
+
               
             </Select>
           </div>
@@ -144,7 +160,7 @@ export default function Search() {
       </div>
       <div className='w-full'>
         <h1 className='text-3xl font-semibold sm:border-b border-gray-500 p-3 mt-5 '>
-          Read below articles:
+          Read below:
         </h1>
         <div className='p-7 flex flex-wrap gap-4'>
           {!loading && posts.length === 0 && (

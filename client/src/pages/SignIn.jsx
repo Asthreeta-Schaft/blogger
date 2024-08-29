@@ -50,10 +50,10 @@ export default function SignIn() {
         {/* Left side */}
         <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
-            <span className="px-2 py-1 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 rounded-lg text-white">
+            <span className="px-2 py-1 bg-gradient-to-r from-green-700 via-green-500 to-blue-500 rounded-lg text-white">
             ARTICULUS
             </span>
-                Blog
+                Centro
           </Link>
 
           <p className="text-sm mt-5">

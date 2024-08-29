@@ -19,7 +19,7 @@ export default function Home() {
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
         <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to Treasury of Knowledge</h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          Here you'll find a variety of articles regarding many versatile collection of topics. Dive into the ocean of knowledge and present your opinion on same...
+          Here you'll find a variety of articles and books regarding many versatile collection of topics. Dive into the ocean of knowledge and present your opinion on same...
         </p>
         <Link
           to='/search'

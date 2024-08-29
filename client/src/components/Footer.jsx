@@ -12,7 +12,7 @@ export default function FooterCom() {
                     <span className="px-2 py-1 bg-gradient-to-r from-green-700 via-green-500 to-blue-500 rounded-lg text-white">
                     ARTICULUS
                     </span>
-                    Blog
+                    Centro
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
@@ -25,7 +25,7 @@ export default function FooterCom() {
                         </Footer.Link>
 
                         <Footer.Link href="/search" rel="noopener noreferrer">
-                            Blogs
+                            Blogs nd Books
                         </Footer.Link>
 
                     </Footer.LinkGroup>
@@ -37,6 +37,10 @@ export default function FooterCom() {
 
                         <Footer.Link href="https://www.instagram.com/god_le_infernal/" target="_blank" rel="noopener noreferrer">
                             Instagram
+                        </Footer.Link>
+
+                        <Footer.Link href="mailto:my.work.shashwat@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mail
                         </Footer.Link>
 
                     </Footer.LinkGroup>
@@ -59,7 +63,7 @@ export default function FooterCom() {
             </div>
             <Footer.Divider />
             <div className="w-full sm:flex sm:items-center sm:justify-center">
-                <Footer.Copyright href="#" by="ARTICULUS Blog | Developed and Maintained by Asthreeta Schaft" year={new Date().getFullYear()}/>
+                <Footer.Copyright href="#" by="ARTICULUS Centro | Developed and Maintained by Asthreeta Schaft" year={new Date().getFullYear()}/>
             </div>
             <br></br>
 
